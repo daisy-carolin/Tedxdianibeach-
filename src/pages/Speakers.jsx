@@ -1,13 +1,13 @@
-import { SPEAKERS } from "../data/site.js";
+import { EVENT, SPEAKERS } from "../data/site.js";
 import { Diamond, PageHero } from "../components/ui.jsx";
 
 export default function Speakers() {
   return (
     <>
-      <PageHero title="Speakers" />
+      <PageHero title="TEDxDianiBeach Program" sub={EVENT.dateLabel} />
       <section className="pink">
         <div className="wrap narrow center">
-          <p>Meet the voices of TEDxDianiBeach. More speakers and talk titles will be added as they are confirmed.</p>
+          <p><strong>Theme:</strong> {EVENT.title}</p>
         </div>
         <div className="wrap spklist">
           {SPEAKERS.map((s, i) => (
@@ -16,7 +16,7 @@ export default function Speakers() {
               <div className="spkbio">
                 <h3>{s.name}</h3>
                 {s.talk && <h4>{s.talk}</h4>}
-                <p>{s.bio}</p>
+                {s.bio && <p>{s.bio}</p>}
               </div>
             </article>
           ))}

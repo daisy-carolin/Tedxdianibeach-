@@ -14,7 +14,7 @@ export function useCountdown(startIso, endIso) {
   };
   const [label, setLabel] = useState(calc);
   useEffect(() => {
-    const id = setInterval(() => setLabel(calc()), 1e4);
+    const id = setInterval(() => setLabel(calc()), 1e3);
     return () => clearInterval(id);
   }, [startIso, endIso]);
   return label;

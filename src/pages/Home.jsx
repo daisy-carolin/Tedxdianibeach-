@@ -1,10 +1,19 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 import { EVENT, GALLERY, PARTNERS, SITE } from "../data/site.js";
 import { PartnerLogos, PhotoGallery } from "../components/ui.jsx";
 import { useCountdown } from "../useCountdown.js";
 
 export default function Home() {
+  const navigate = useNavigate();
   const countdown = useCountdown(EVENT.start, EVENT.end);
+
+  useEffect(() => {
+    if (countdown === "Thank you for joining us") {
+      navigate("/past-events", { replace: true });
+    }
+  }, [countdown, navigate]);
+
   return (
     <>
       <section className="hero">

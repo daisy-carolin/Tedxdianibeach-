@@ -82,14 +82,24 @@ h2.red{color:var(--red)}
 .diamond img,.dph{position:absolute;inset:6% 8%;width:84%;height:88%;object-fit:cover;clip-path:polygon(50% 0,100% 40%,85% 100%,15% 100%,0 40%)}
 .dph{background:linear-gradient(160deg,#0f6e73,#111);display:grid;place-items:center;color:#fff;font:800 3.5rem "Montserrat",sans-serif}
 .teamgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:2.5rem 1.5rem;text-align:center}
+.teamgrid-featured{grid-template-columns:repeat(2,minmax(0,1fr));gap:2rem}
+.teamgrid-others{grid-template-columns:repeat(3,minmax(0,1fr));gap:2rem 1.25rem;margin-top:3rem}
+.teamgrid-featured .member{padding:1.75rem;background:rgba(255,255,255,.72)}
+.teamgrid-featured .diamond{width:min(100%,300px)}
+.teamgrid-featured .member-bio{margin-top:1rem}
+.teamgrid-others .diamond{width:min(100%,210px)}
+.teamgrid-others .member-bio{margin-top:.75rem}
 .member h3{font-size:1.05rem;margin-top:.8rem}
 .member p{margin:.2rem 0 0;color:#777;font-size:.95rem}
+.member .member-bio{margin:.8rem 0 0;text-align:left;color:var(--ink);font-size:.9rem}
 .spklist{display:grid;gap:2rem;margin-top:2.5rem}
 .spkcard{display:grid;gap:1.2rem;background:var(--red);color:#fff;padding:1.5rem}
 .spkbio h3{font-size:1.5rem;text-transform:uppercase}
 .spkbio h4{margin:.6rem 0;font-size:1.1rem;color:#1a0005}
 .spkbio p{margin:0}
 @media(min-width:760px){.spkcard{grid-template-columns:260px 1fr;align-items:center;padding:2rem}}
+@media(max-width:700px){.teamgrid-featured{grid-template-columns:1fr}.teamgrid-others{grid-template-columns:repeat(2,minmax(0,1fr));gap:2rem 1rem}}
+@media(max-width:460px){.teamgrid-others{grid-template-columns:1fr}.teamgrid-featured .member{padding:1.25rem}}
 
 /* sponsors */
 .mailbox{display:grid;gap:.4rem;background:var(--red);color:#fff;padding:1.6rem;text-align:center;margin-top:1.5rem}
@@ -104,6 +114,7 @@ h2.red{color:var(--red)}
 .pkg li{margin-bottom:.5rem}
 .logos{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:1rem;margin-top:1.5rem}
 .logos div{border:1px dashed #999;height:84px;display:grid;place-items:center;color:#777;font-size:.9rem;background:#fff}
+.logos img{max-width:90%;max-height:68px;object-fit:contain}
 
 /* past events */
 .pastgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1rem}
