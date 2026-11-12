@@ -25,7 +25,7 @@ export const SPEAKERS = [
   { name: "Charles Nyamawi", talk: "Pick up a basketball for boys and girls", photo: "./images/charles-mangale-nyamawi.jpg" },
   { name: "Sandra Ivanov", talk: "The small rebellion of staying an amateur", bio: "In her talk, Sandra explores 'The small rebellion of staying an amateur'.", photo: "./images/sandra.jpg", pos: "50% 0%" },
   { name: "Havana Gari", talk: "How small beginnings take us further than we imagine", bio: "Havana explores how the first step can set a bigger journey in motion.", photo: "./images/havana.jpg", pos: "55% 40%" },
-  { name: "Jacky Kowa", talk: "Let's do things right for youth" },
+  { name: "Jacky Kowa", talk: "Let's do things right for youth", photo: "./images/jacky-kowa.jpeg" },
   { name: "Victor and Tina Omollo", talk: "Care: It starts at home", photo: "./images/victor-tina-omollo.jpg" },
 ];
 
