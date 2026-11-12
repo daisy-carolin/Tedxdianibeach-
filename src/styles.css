@@ -86,6 +86,7 @@ h2.red{color:var(--red)}
 .teamgrid-others{grid-template-columns:repeat(3,minmax(0,1fr));gap:2rem 1.25rem;margin-top:3rem}
 .teamgrid-featured .member{padding:1.75rem;background:rgba(255,255,255,.72)}
 .teamgrid-featured .diamond{width:min(100%,300px)}
+.teamgrid-featured .member h3{margin-top:1.5rem}
 .teamgrid-featured .member-bio{margin-top:1rem}
 .teamgrid-others .diamond{width:min(100%,210px)}
 .teamgrid-others .member-bio{margin-top:.75rem}
